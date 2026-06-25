@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NGO Training Platform</title>
+    <!-- Inject Tailwind via CDN to keep files minimal (No tailwind.config.js needed) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ngo: {
+                dark: '#0f172a', /* slate-900 */
+                light: '#f8fafc', /* slate-50 */
+                accent: '#475569' /* slate-600 */
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body { 
+        background-color: #f8fafc; 
+        color: #0f172a; 
+        font-family: system-ui, -apple-system, sans-serif; 
+      }
+      /* Remove default button focus styles for a sharper look */
+      input:focus, button:focus { outline: none; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
